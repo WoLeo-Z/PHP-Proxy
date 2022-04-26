@@ -1,5 +1,5 @@
 <?php
-$pass = "web";//web为默认密码，自行修噶
+$pass = "PHP-Proxy"; //默认密码，自行修改
 if (isset($_POST['password'])) {
     setcookie("password", $_POST['password'], time()+3600*24*366);
     header("Refresh:0");
